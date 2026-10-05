@@ -2,10 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student web developer portfolio.">
+  <title>Alex Morgan | Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header holds the site name and the main navigation. -->
+  <header class="site-header">
+    <a class="logo" href="#top">AM<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero section: the first thing visitors see. -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Student web developer</p>
+        <h1>Building ideas<br><em>for the web.</em></h1>
+        <p class="hero-text">I’m Alex, a curious developer learning to turn thoughtful ideas into useful, welcoming websites.</p>
+        <a class="button" href="#projects">See my projects <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-note">Based in Chicago<br>Available for learning<br>and collaboration</div>
+    </section>
+
+    <!-- About section: a short introduction and photo. -->
+    <section class="about section" id="about">
+      <div class="section-label">01 / About me</div>
+      <div class="about-content">
+        <img class="profile-photo" src="img/me.png" alt="Portrait of Alex Morgan">
+        <div>
+          <h2>Making the internet<br><span>more human.</span></h2>
+          <p>I’m currently studying web development and building my skills one project at a time. I enjoy the balance of creative design and careful problem-solving that goes into a great website.</p>
+          <p>This portfolio will grow alongside my learning. Come back soon to see what I make next.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section: these can be updated as new skills are learned. -->
+    <section class="skills section" id="skills">
+      <div class="section-label">02 / What I use</div>
+      <div class="skills-content">
+        <h2>Tools I’m<br><span>learning.</span></h2>
+        <ul class="skill-list">
+          <li><span>01</span> HTML</li>
+          <li><span>02</span> CSS</li>
+          <li><span>03</span> JavaScript</li>
+          <li><span>04</span> Git &amp; GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects section: replace the sample text and links with real work. -->
+    <section class="projects section" id="projects">
+      <div class="section-label">03 / Selected work</div>
+      <h2>A few things<br><span>in progress.</span></h2>
+      <div class="project-list">
+        <article class="project-card">
+          <img src="img/laptop.jpg" alt="Colorful laptop keyboard">
+          <div class="project-info">
+            <p class="project-number">01 / First project</p>
+            <h3>Personal website</h3>
+            <p>A simple, responsive website built with HTML and CSS.</p>
+            <a href="#contact">View project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card project-card-light">
+          <div class="project-placeholder" aria-hidden="true">✦</div>
+          <div class="project-info">
+            <p class="project-number">02 / Coming soon</p>
+            <h3>Your next idea</h3>
+            <p>A new project will appear here as my skills grow.</p>
+            <a href="#contact">Follow along <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact section: a simple call to action. -->
+    <section class="contact section" id="contact">
+      <div class="section-label">04 / Say hello</div>
+      <h2>Have an idea?<br><span>Let’s talk.</span></h2>
+      <p>I’m always open to feedback, questions, and new ideas to practice.</p>
+      <a class="button button-dark" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Alex Morgan</p>
+    <p>Made while learning on the web.</p>
+  </footer>
 </body>
 </html>
