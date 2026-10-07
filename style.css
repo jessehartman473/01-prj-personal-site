@@ -273,6 +273,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 20px;
 	padding: 25px 7%;
 	color: var(--muted);
 	background: var(--paper);
@@ -342,4 +343,5 @@ footer {
 	footer p {
 		margin-bottom: 8px;
 	}
+
 }

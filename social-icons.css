@@ -1,0 +1,42 @@
+/* Green buttons make the footer's social links easy to find. */
+.social-links {
+	display: flex;
+	gap: 12px;
+}
+
+.social-links a {
+	display: flex;
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: white;
+	background: #2f6b4f;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+	background: #214c38;
+}
+
+.social-links svg {
+	width: 18px;
+	height: 18px;
+	fill: none;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 1.7;
+}
+
+.social-links svg circle:last-child {
+	fill: currentColor;
+	stroke: none;
+}
+
+@media (max-width: 700px) {
+	.social-links {
+		margin-top: 18px;
+	}
+}
